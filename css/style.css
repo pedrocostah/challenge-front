@@ -61,9 +61,10 @@
     flex-direction: column;
 }
 .index-card img {
-    width: 300px;
-    height: 250px;
+    width: 20vw;
+    height: 40vh;
     margin: auto;
+
 }
 .index-card:hover {
     transform: scale(1.05);
