@@ -1,11 +1,11 @@
 .hero-label {
     display: flex;
     width: 500px;
-    background-color: #1b1f23;
+    background-color: #4A9AA4;
     color: #fff;
     justify-content: space-around;
     align-items: center;
-    border: #0a74da 2px solid;
+    border: #3775B6 2px solid;
   
   }
   

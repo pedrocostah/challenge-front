@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checklist.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="faq.html">FAQ - Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="ajuda.html" id="pagina-selecionada">Ajuda</a></li>
+            <li><a href="integrantes.html">Quem somos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Checklist de Preparação</h1>
+        <p>Veja se está tudo certo para sua consulta online</p>
+    </header>
+
+    <main>
+        <form id="checklistForm">
+            <label><input type="checkbox" name="item"> Estou com o celular carregado</label>
+            <label><input type="checkbox" name="item"> Tenho acesso à internet/Wi-Fi</label>
+            <label><input type="checkbox" name="item"> Recebi o link da consulta</label>
+            <label><input type="checkbox" name="item"> Sei o horário da minha consulta</label>
+            <label><input type="checkbox" name="item"> Estou em um local tranquilo para conversar</label>
+
+            <button type="button" onclick="verificarChecklist()">Verificar</button>
+        </form>
+
+        <div class="resultado" id="resultado"></div>
+    </main>
+
+    <script>
+        function verificarChecklist() {
+            const checkboxes = document.querySelectorAll('input[name="item"]');
+            const total = checkboxes.length;
+            let marcados = 0;
+            checkboxes.forEach(cb => {
+                if (cb.checked) marcados++;
+            });
+
+            const resultado = document.getElementById("resultado");
+
+            if (marcados === total) {
+                resultado.textContent = "Tudo pronto! Você está preparado para sua consulta.";
+            } else {
+                resultado.textContent = "Você ainda precisa verificar alguns itens antes da consulta.";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
