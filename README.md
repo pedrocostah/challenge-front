@@ -1,4 +1,4 @@
-# challenge-front
+# CHALLENGE - SPRINT 01
 # HC Saúde Digital
 
 Projeto Front-End desenvolvido para a disciplina de FRONT-END DESIGN ENGINEERING - FIAP, com foco em inclusão digital para pacientes do Hospital das Clínicas com baixa afinidade tecnológica.
